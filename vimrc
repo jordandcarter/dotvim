@@ -1,16 +1,19 @@
-" http://blog.adamlowe.com/2009/12/vim-destroys-all-other-rails-editors.html
-filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 syntax on
-filetype plugin indent on
+
+if has("autocmd")
+  filetype plugin indent on
+endif
+
 set tabstop=2
 set smarttab
 set shiftwidth=2
 set autoindent
 set expandtab
 set grepprg=ack
+
 "Keymappings
 let mapleader = ","
 :nmap <unique> <silent> <Leader>t :CommandT<CR>
