@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/jordan/Dev/Rails/bucky_box'
+let g:netrw_dirhist_2='/Users/jordan/Dev/Rails/grabaseat'
+let g:netrw_dirhist_3='/Users/jordan/Dev/Rails/bucky_box'
+let g:netrw_dirhist_4='/Users/jordan/Dev/Rails/bucky_box/lib'
+let g:netrw_dirhist_5='/Users/jordan/Dev/Rails/bucky_box'
+let g:netrw_dirhist_6='/Users/jordan/Dev/Rails/sudoku'
+let g:netrw_dirhist_7='/Users/jordan/Dev/Rails/ims'
+let g:netrw_dirhist_8='/Users/jordan/Dev/Rails/bucky_box'
