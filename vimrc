@@ -1,5 +1,6 @@
 " =======================================
-" Who: Jeremy Mack (@mutewinter)
+" Who: Jordan Carter (@jordandcarter)
+" Who First: Jeremy Mack (@mutewinter)
 " What: .vimrc of champions
 " Version: 1.0 (this may never change because who versions dot files,
 " honestly)
@@ -26,17 +27,17 @@ Bundle 'gmarik/vundle'
 Bundle 'ZoomWin'
 Bundle 'wincent/Command-T'
 " This fork is required due to remapping ; to :
-Bundle 'christoomey/vim-space'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'mutewinter/LustyJuggler'
-Bundle 'kien/ctrlp.vim'
+" Bundle 'christoomey/vim-space'
+" Bundle 'Lokaltog/vim-easymotion'
+" Bundle 'mutewinter/LustyJuggler'
+" Bundle 'kien/ctrlp.vim'
 " UI Additions
 Bundle 'mutewinter/vim-indent-guides'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
-Bundle 'Rykka/ColorV'
+" Bundle 'Rykka/ColorV'
 Bundle 'tpope/vim-vividchalk'
-Bundle 'nanotech/jellybeans.vim'
+" Bundle 'nanotech/jellybeans.vim'
 Bundle 'tomtom/quickfixsigns_vim'
 " Commands
 Bundle 'scrooloose/nerdcommenter'
@@ -55,6 +56,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
 Bundle 'gregsexton/MatchTag'
 Bundle 'Shougo/neocomplcache'
+Bundle 'vim-scripts/YankRing.vim'
 " Language Additions
 "   Ruby
 Bundle 'vim-ruby/vim-ruby'
@@ -66,23 +68,25 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'leshill/vim-json'
 Bundle 'itspriddle/vim-jquery'
+"   C++
+Bundle 'HenningM/cvim-pathogen'
 "   Other Languages
-Bundle 'msanders/cocoa.vim'
-Bundle 'mutewinter/taskpaper.vim'
-Bundle 'mutewinter/nginx.vim'
-Bundle 'timcharper/textile.vim'
+" Bundle 'msanders/cocoa.vim'
+" Bundle 'mutewinter/taskpaper.vim'
+" Bundle 'mutewinter/nginx.vim'
+" Bundle 'timcharper/textile.vim'
 Bundle 'ChrisYip/Better-CSS-Syntax-for-Vim'
-Bundle 'acustodioo/vim-tmux'
+" Bundle 'acustodioo/vim-tmux'
 Bundle 'hallison/vim-markdown'
-Bundle 'xhtml.vim--Grny'
+" Bundle 'xhtml.vim--Grny'
 " MatchIt
 Bundle 'matchit.zip'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 " Libraries
-Bundle 'L9'
+" Bundle 'L9'
 Bundle 'tpope/vim-repeat'
-Bundle 'tomtom/tlib_vim'
+" Bundle 'tomtom/tlib_vim'
 
 filetype plugin indent on  " Automatically detect file types. (must turn on after Vundle)
 
@@ -131,7 +135,7 @@ endif
 " Color
 " ---------------
 set background=dark
-colorscheme jellybeans
+colorscheme vividchalk
 
 " ---------------
 " Backups
@@ -145,7 +149,7 @@ set directory=~/.vim/tmp
 " ---------------
 set ruler  " Ruler on
 set nu  " Line numbers on
-set nowrap  " Line wrapping off
+set wrap  " Line wrapping on
 set laststatus=2  " Always show the statusline
 set cmdheight=2
 set encoding=utf-8
